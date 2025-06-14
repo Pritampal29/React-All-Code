@@ -1,0 +1,134 @@
+/* Wrap all styles inside this main wrapper */
+.text-analyzer-wrapper {
+  background-color: #000;
+  padding: 20px;
+  color: #00ffff;
+  min-height: 80vh;
+  font-family: Arial, sans-serif;
+}
+
+.text-analyzer-container {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Label and Textarea */
+.input-col label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #00ffff;
+}
+
+.input-col textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  background-color: #000;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+/* Buttons Styling */
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.cyan-outline {
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+}
+
+.btn.cyan-outline:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.btn.green {
+  background-color: transparent;
+  color: #39a70e;
+  border: 1px solid #39a70e;
+}
+.btn.green:hover {
+  background-color: #39a70e;
+  color: #000;
+}
+
+.btn.yellow {
+  background-color: transparent;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+}
+.btn.yellow:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.btn.red {
+  background-color: transparent;
+  color: crimson;
+  border: 1px solid crimson;
+}
+.btn.red:hover {
+  background-color: crimson;
+  color: #000;
+}
+
+/* Result Section */
+.result-col {
+  background-color: #000;
+  padding: 15px;
+  border-radius: 8px;
+  color: #00ffff;
+  margin-top: 35px;
+}
+
+.result-col ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.result-col li {
+  margin-bottom: 12px;
+}
+
+.result-col li span {
+  padding: 2px 5px;
+  background-color: #00ffff;
+  color: #000;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .result-col {
+    margin-top: 30px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+.sp-todo-app {
+  background: #000;
+  color: #00ffff;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.sp-todo-app h2 {
+  color: #00ffff;
+  font-weight: 700;
+}
+
+.sp-todo-app .card {
+  background: #111;
+  border: none;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.sp-todo-app .form-control {
+  background-color: #111;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+}
+
+.sp-todo-app .form-control::placeholder {
+  color: #00ffff;
+  opacity: 0.7;
+}
+
+.sp-todo-app .btn-add,
+.sp-todo-app .btn-clear {
+  background: #00ffff;
+  color: #000;
+  border: none;
+  cursor: pointer !important;
+}
+
+.sp-todo-app .btn-add {
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.sp-todo-app .btn-add:hover,
+.sp-todo-app .btn-clear:hover {
+  opacity: 0.8 !important;
+}
+
+.sp-todo-app .btn-sp-check {
+  background: #30a10d;
+  color: #fff;
+  border: none;
+  cursor: pointer !important;
+  transition: all 0.2s ease;
+}
+
+.sp-todo-app .btn-sp-check:hover {
+  opacity: 0.8 !important;
+}
+
+.sp-todo-app .btn-delete {
+  background: #ff4444;
+  color: #fff;
+  border: none;
+  cursor: pointer !important;
+  transition: all 0.2s ease;
+}
+
+.sp-todo-app .btn-delete:hover {
+  background: #cc0000;
+  opacity: 1 !important;
+}
+
+.sp-todo-app .todo-item {
+  border-bottom: 1px solid #00ffff;
+}
+
+.sp-todo-app .todo-text {
+  color: #00ffff;
+  font-size: 18px;
+}
+
+.checked-item {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.todo-list-pr {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .sp-todo-app .btn {
+    padding: 7px;
+  }
+  .sp-todo-app .card {
+    width: auto;
+  }
+  .todo-list-pr {
+    width: auto;
+  }
+}
