@@ -5,12 +5,14 @@ import Todo from "./components/Todo/Todo";
 import WordCounter from "./components/WordCounter/WordCounter";
 import AppLayout from "./AppLayout";
 import Calculator from "./components/Calculator/Calculator";
+import ErrorPage from "./Error-404";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
