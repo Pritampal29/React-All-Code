@@ -6,6 +6,7 @@ import WordCounter from "./components/WordCounter/WordCounter";
 import AppLayout from "./AppLayout";
 import Calculator from "./components/Calculator/Calculator";
 import ErrorPage from "./Error-404";
+import AgeCal from "./components/AgeCalculator/AgeCal";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const App = () => {
         {
           path: "/calculator",
           element: <Calculator />,
+        },
+        {
+          path: "/agecal",
+          element: <AgeCal />,
         },
       ],
     },

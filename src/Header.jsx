@@ -70,6 +70,11 @@ const Header = () => {
             Calculator
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/agecal" onClick={handleLinkClick}>
+            Age Calculator
+          </NavLink>
+        </li>
         <li></li>
       </ul>
     </header>
